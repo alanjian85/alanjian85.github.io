@@ -37,7 +37,7 @@
         <title>NES Emulation Software</title>
     </head>
     <body>
-        <img src="icon.png" width="128" height="128">
+        <a href="https://alanjian85.github.io/nes"><img src="icon.png" width="128" height="128"></a>
 
         <div>
             LEFT - A
@@ -51,9 +51,18 @@
             SELECT - RIGHT SHIFT
             <br>
             START - ENTER
+            <br>
+            F2 - RESTART
+            <hr>
+            F1 - Log instructions
         </div>
 
         <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+
+        <div style="position: absolute; bottom: 0%;">
+            <a class="github-button" href="https://github.com/alanjian85/nes" data-show-count="true" aria-label="Star alanjian85/nes on GitHub">Star</a>
+        </div>
+
         <script type="text/javascript">
             var Module = {
                 canvas: document.getElementById('canvas')
@@ -81,6 +90,7 @@
 
             window.addEventListener('resize', resize)
         </script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
         <script src="nes.js"></script>
     </body>
 </html>
